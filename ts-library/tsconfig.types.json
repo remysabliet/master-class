@@ -1,0 +1,13 @@
+// We are extending existing tsconfig.json to inherit all the rules
+// Just for the purpose of having eslint happy we have created this extra configuration to allow jest types.
+// This configuration is loaded by eslint in .eslintrc.json 's "parserOptions" configuration
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": ".dist-types",
+    "declaration": true,
+    "noEmit": false,
+    "emitDeclarationOnly": true
+  },
+  "include": ["src"]
+}

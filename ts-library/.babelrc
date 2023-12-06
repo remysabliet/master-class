@@ -1,0 +1,10 @@
+{
+  "presets": [
+    ["@babel/preset-env", { "targets": { "node": "10" } }],
+    "@babel/preset-react",
+    "@babel/preset-typescript"
+  ],
+  //  When building, it fails because of a plugin duplicate
+  //  it sounds like @babel/plugin-proposal-class-properties is included in some other react dependencies
+  // "plugins": ["@babel/plugin-proposal-class-properties"] 
+}
