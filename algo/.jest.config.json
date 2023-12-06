@@ -1,0 +1,9 @@
+{
+    "clearMocks": true,
+    "moduleNameMapper": {
+        "@code/(.*)": [
+            "<rootDir>/src/day4/$1"
+        ]
+    },
+    "preset": "ts-jest"
+}
